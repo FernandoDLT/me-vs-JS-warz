@@ -839,11 +839,11 @@ let numzies = [4, 1, 420, 62, 17, 9, 110, 72]
 numzies = numzies.filter(num => num % 2 === 0)
 console.log(onlyEvenzz(numzies))
 
-// function addSecondLowAndSecondHi(arr) {
-//    let sorted = arr.sort((a, b) => a - b)
-//    alert (sorted [1] + sorted[sorted.length - 2])
-// }
-// addSecondLowAndSecondHi([4, 1, 420, 6, 7, 9, 10, 720])
+function addSecondLowAndSecondHi(arr) {
+   let sorted = arr.sort((a,b) => a - b)
+   alert (sorted [1] + sorted[sorted.length - 2])
+}
+addSecondLowAndSecondHi([4, 1, 420, 6, 7, 9, 10, 720])
 
 // Question #48 — if / else
 const digit = 10
@@ -977,3 +977,10 @@ const nummoz = [3, 7, 2, 9];
 const resultado = nummoz.find(num => num > 5);
 
 console.log(resultado);
+
+function addSecondLowAndSecondHi(arr) {
+   let sorted = arr.sort((a, b) => a - b)
+   alert (sorted [1] + sorted[sorted.length - 2])
+}
+
+addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720])
