@@ -16,3 +16,15 @@ if (true) {
 }
 // logs 10 (the outer-scoped 'x', completely untouched by the block condition)
 console.log(x)
+
+// #2
+// The 'user' constant is assigned an object reference
+const user = {
+   name: "Fernando"
+};
+
+// Properties inside the obj can be mutated/reassigned
+user.name = "Ronald"
+
+// Will log 'Ronald' (the reassigned property value)
+console.log(user.name)
