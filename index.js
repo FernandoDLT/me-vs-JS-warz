@@ -28,3 +28,15 @@ user.name = "Ronald"
 
 // Will log 'Ronald' (the reassigned property value)
 console.log(user.name)
+
+// Question 3
+// 'var a' is hoisted to the top scope, 
+// but initialized as 'undefined'
+console.log(b); // logs undefined
+
+// 'a' is assigned the value 10 here
+var b = 10;
+
+// var a;         // Hoisted to the top with value 'undefined'
+// console.log(a); // Logs 'undefined'
+// a = 10;        // Assignment stays in place
