@@ -44,7 +44,18 @@ var b = 10;
 // Question #4
 // 'c' is hoisted, but resides in the Temporal Dead Zone (TDZ)
 // until initialized
-console.log(c); // ReferencError: Cannot access 'c' before initialization
+// console.log(c); // ReferencError: Cannot access 'c' before initialization
 
 // 'c' is initialized here
 let c = 10;
+
+// Question #5
+// Function declarations are fully hoisted,
+// allowing 'foo()' to be called before its actual place
+// in the code 
+foo();
+// The function declaration is lifted to the top
+// of the scope during memory creation
+function foo() {
+   console.log("Hello")
+}
