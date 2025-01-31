@@ -52,10 +52,20 @@ let c = 10;
 // Question #5
 // Function declarations are fully hoisted,
 // allowing 'foo()' to be called before its actual place
-// in the code 
-foo();
+// in the code
+// foo();
 // The function declaration is lifted to the top
 // of the scope during memory creation
-function foo() {
+// function foo() { // Fully hoisted
+//    console.log("Hello")
+// }
+
+
+// Question #6
+// Because foo is declared with const,
+// it's in Temporal Dead Zone until initialization
+foo();
+// Not callable before initialization
+const foo = function () {
    console.log("Hello")
 }
