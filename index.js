@@ -64,8 +64,16 @@ let c = 10;
 // Question #6
 // Because foo is declared with const,
 // it's in Temporal Dead Zone until initialization
-foo();
+// foo();
 // Not callable before initialization
 const foo = function () {
    console.log("Hello")
 }
+
+// Function is defined, accepting two parameters
+function add(a, b) {
+   // Returns the sum of param 'a' and param 'b'
+   return a + b;
+}
+// Invoke the function to get the output of 5:
+console.log(add(2, 3)); // Output 5
