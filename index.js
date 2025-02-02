@@ -518,46 +518,94 @@ const theBigNum = arr => Math.max(...arr)
 console.log(theBigNum([3, 7, 2, 9, 4, 12, 2, 8, 13, 29])) // Log: 13
 
 // Question #36
-function secondLargest(arr) {
-   // Initialize tracking variables to the lowest possible numerical value
-   let first = -Infinity;
-   let second = -Infinity;
+// function secondLargest(arr) {
+//    // Initialize tracking variables to the lowest possible numerical value
+//    let first = -Infinity;
+//    let second = -Infinity;
 
-   for (let i = 0; i < arr.length; i++) {
-      // Case 1: Found a new highest number
-      if (arr[i] > first) {
-         second = first;  // The old 1st place becomes 2nd place
-         first = arr[i];  // Set the new 1st place champion
+//    for (let i = 0; i < arr.length; i++) {
+//       // Case 1: Found a new highest number
+//       if (arr[i] > first) {
+//          second = first;  // The old 1st place becomes 2nd place
+//          first = arr[i];  // Set the new 1st place champion
+//       }
+//       // Case 2: Found a number between 'first' and 'second'
+//       else if (arr[i] > second && arr[i] !== first) {
+//          second = arr[i]; // Update 2nd place
+//       }
+//    }
+
+//    return second;
+// }
+
+// console.log(secondLargest([3, 7, 2, 9, 4])); // Logs: 7
+
+// Question 36b — Frequency Counter
+
+// Write a function that takes an array of numbers
+// and returns an object showing how many times each number appears.
+// Accepts an array of numbers and counts occurrences of each unique value
+
+// We create a function called countNumbers.
+// "arr" is the parameter — it will represent the array we give the function.
+function countNumbers(arr) { 
+
+   // Create an empty object.
+   // We will use it to keep track of how many times each number appears.
+   let returned = {}; 
+ 
+   // Go through the array one item at a time.
+   // "i" starts at 0 and increases by 1 each time.
+   for (let i = 0; i < arr.length; i++) { 
+
+      // Get the current number from the array
+      // and store it in a variable called "num".
+      let num = arr[i]; 
+ 
+      // Does our object already have this number?
+      if (returned[num]) { 
+
+         // YES! It already exists.
+         // Add 1 to its current count.
+         returned[num] += 1; 
+
+      } else { 
+
+         // NO! We haven't seen this number before.
+         // Create it in the object and give it a count of 1.
+         returned[num] = 1; 
       } 
-      // Case 2: Found a number between 'first' and 'second'
-      else if (arr[i] > second && arr[i] !== first) {
-         second = arr[i]; // Update 2nd place
-      }
-   }
-
-   return second;
+   } 
+ 
+   // Give the completed object back to whoever called the function.
+   return returned; 
 }
-
-console.log(secondLargest([3, 7, 2, 9, 4])); // Logs: 7
-
+console.log(countNumbers([1, 2, 2, 3, 3, 3]))
+// {
+//   1: 1,
+//   2: 2,
+//   3: 3
+// }
 
 // Question #37
 // Initializes an array containing three numeric values
-const numz = [10, 20, 30];
+// const numz = [10, 20, 30];
+
 
 // Standard for-loop:
 // 1. Sets index counter 'i' to 0 (starts at the first element)
 // 2. Runs as long as 'i' is less than numz.length (3)
 // 3. Increments 'i' by 1 on each iteration
-for (let i = 0; i < numz.length; i++) {
-   // Accesses the array element at index 'i' and prints its value (not the index itself)
-   // Iteration 0: numz[0] -> 10
-   // Iteration 1: numz[1] -> 20
-   // Iteration 2: numz[2] -> 30
-   console.log(numz[i]);
-}
+// for (let i = 0; i < numz.length; i++) {
+//    // Accesses the array element at index 'i' and prints its value (not the index itself)
+//    // Iteration 0: numz[0] -> 10
+//    // Iteration 1: numz[1] -> 20
+//    // Iteration 2: numz[2] -> 30
+//    console.log(numz[i]);
+// }
 
 // A) 0 1 2
 // B) 10 20 30 // My answer
 // C) 10 30
 // D) undefined
+
