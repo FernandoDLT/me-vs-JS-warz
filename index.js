@@ -70,6 +70,7 @@ const foo = function () {
    console.log("Hello")
 }
 
+// Question #7
 // Function is defined, accepting two parameters
 function add(a, b) {
    // Returns the sum of param 'a' and param 'b'
@@ -77,3 +78,13 @@ function add(a, b) {
 }
 // Invoke the function to get the output of 5:
 console.log(add(2, 3)); // Output 5
+
+// Question #8 — Parameters vs. arguments
+// Function is defined, accepting one parameter
+function great(name) {
+   // Return template literal string embedding the 'name' parameter
+   return `Hello, ${name}`;
+}
+// Calls the function; returns "Hello, Fernando"
+// (wrap in console.log() to print to terminal)
+console.log(greet('Fernando')); // Logs: "Hello, Fernando"
