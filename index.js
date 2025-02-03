@@ -81,10 +81,20 @@ console.log(add(2, 3)); // Output 5
 
 // Question #8 — Parameters vs. arguments
 // Function is defined, accepting one parameter
-function great(name) {
+function greet(name) {
    // Return template literal string embedding the 'name' parameter
    return `Hello, ${name}`;
 }
 // Calls the function; returns "Hello, Fernando"
 // (wrap in console.log() to print to terminal)
 console.log(greet('Fernando')); // Logs: "Hello, Fernando"
+
+// Question 9 — return
+// Function is defined to demonstrate early return behavior
+function test() {
+   console.log("A"); // Logs: "A"
+   return;          // Exits the function immediately, returning undefined
+   console.log("B"); // Unreachable code: never executes because it comes after 'return'
+}
+
+test();
