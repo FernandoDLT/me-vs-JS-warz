@@ -3,7 +3,7 @@
 // #1
 // Variable 'x' is declared and assigned the
 // value of 10 in the outer/global scope
-let x = 10
+// let x = 10
 
 // 'if' condition is hardcoded to true so the block
 // always excecutes
@@ -12,10 +12,10 @@ if (true) {
    // assigned 20
    let x = 20
    // logs 20 (the block scoped 'x')
-   console.log(x)
+   // console.log(x)
 }
 // logs 10 (the outer-scoped 'x', completely untouched by the block condition)
-console.log(x)
+// console.log(x)
 
 // #2
 // The 'user' constant is assigned an object reference
@@ -96,5 +96,19 @@ function test() {
    return;          // Exits the function immediately, returning undefined
    console.log("B"); // Unreachable code: never executes because it comes after 'return'
 }
+// Only returns "A"
+// test();
 
-test();
+// Question 10 — Scope
+// Variable 'x' is declared in the global scope and assigned 10
+let x = 10;
+
+// Function defines a local scope
+function test() {
+  // A new variable 'x' is scoped inside 'test', shadowing the global 'x'
+  let x = 20;
+  console.log(x); // Logs: 20 (local 'x')
+}
+
+test();          // Calls the function, executing the log above (Logs: 20)
+console.log(x);  // Logs: 10 (global 'x', remaining completely unchanged)
