@@ -112,3 +112,21 @@ function test() {
 
 test();          // Calls the function, executing the log above (Logs: 20)
 console.log(x);  // Logs: 10 (global 'x', remaining completely unchanged)
+
+// 'outer' creates a parent scope containing 'count'
+function outer() {
+  let count = 0;
+
+  // Inner function retains access to 'count' even after 'outer' finishes (Closure)
+  return function() {
+    count++;      // Increments the preserved 'count' variable
+    return count; // Returns the updated value
+  };
+}
+
+// 'outer()' executes and returns the inner function,
+// creating a persistent closure around 'count'
+const counter = outer();
+
+console.log(counter()); // Logs: 1 (count increments from 0 to 1)
+console.log(counter()); // Logs: 2 (count increments from 1 to 2 using the same closure state)
