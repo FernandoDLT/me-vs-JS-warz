@@ -113,6 +113,7 @@ function test() {
 test();          // Calls the function, executing the log above (Logs: 20)
 console.log(x);  // Logs: 10 (global 'x', remaining completely unchanged)
 
+// Question 11 — Closures
 // 'outer' creates a parent scope containing 'count'
 function outer() {
   let count = 0;
@@ -130,3 +131,12 @@ const counter = outer();
 
 console.log(counter()); // Logs: 1 (count increments from 0 to 1)
 console.log(counter()); // Logs: 2 (count increments from 1 to 2 using the same closure state)
+
+// Question 12 — Higher-order functions
+// Created a variable with an array of nums
+const nums = [1, 2, 3]
+// Created a second variable called doubled,
+// mapped the array to return the nums in a new array multiplied by 2
+const doubled = nums.map(num => num * 2);
+
+console.log(doubled); // Output = [2, 4, 6]
