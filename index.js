@@ -132,11 +132,30 @@ const counter = outer();
 console.log(counter()); // Logs: 1 (count increments from 0 to 1)
 console.log(counter()); // Logs: 2 (count increments from 1 to 2 using the same closure state)
 
-// Question 12 — Higher-order functions
+// Question #12 — Higher-order functions
 // Created a variable with an array of nums
-const nums = [1, 2, 3]
-// Created a second variable called doubled,
-// mapped the array to return the nums in a new array multiplied by 2
-const doubled = nums.map(num => num * 2);
+// const nums = [1, 2, 3]
+   // Created a second variable called doubled,
+   // mapped the array to return the nums in a new array multiplied by 2
+// const doubled = nums.map(num => num * 2);
 
 console.log(doubled); // Output = [2, 4, 6]
+
+// Question #13 — map() vs forEach()
+// What's the main difference?
+
+// A) map() returns a new array; forEach() does not /// My answer
+
+// B) forEach() returns a new array; map() does not
+// C) They always return the same thing
+// D) map() only works with numbers
+
+// Question #14 — filter()
+// Create an variable with an array of numbers
+const nums = [1, 2, 3, 4, 5];
+
+// Create an variable named result, in which the nums will be filtered,
+// and return a new array of numbers greater than 2
+const result = nums.filter(num => num > 2);
+
+console.log(result); // Output = [3, 4, 5]
