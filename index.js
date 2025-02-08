@@ -181,14 +181,31 @@ const result = nums.reduce((total, num) => total + num, 0);
 // console.log(user.sex); // Logs: "male"
 
 // Question 17 — Destructuring
+
+// Here is the quick breakdown of what JavaScript does behind the scenes on that exact line:
+// const: Creates a brand-new, read-only local variable.
+// { name }: Tells JavaScript, "Look for a key matching the word name inside the source object."
+// = user: Points to the target object (user) from which to pull that property.
+// It is a shorthand equivalent to writing:
+// const name = user.name;
+
 // Creates an object with name and age properties
 const user = {
-  name: "Fernando",
+  name: "Karl",
   age: 40
 };
-
 // Uses object destructuring to extract the 'name' 
 // property into a standalone variable
 const { name } = user;
 
 console.log(name); // Logs: "Fernando"
+
+// Question #18 — Destructuring
+const player = {
+   name: "Fernando",
+   age: 40
+}
+
+const { age } = player;
+
+console.log(age)
