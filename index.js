@@ -19,15 +19,15 @@ if (true) {
 
 // #2
 // The 'user' constant is assigned an object reference
-const user = {
-   name: "Fernando"
-};
+// const user = {
+//    name: "Fernando"
+// };
 
 // Properties inside the obj can be mutated/reassigned
-user.name = "Ronald"
+// user.name = "Ronald"
 
-// Will log 'Ronald' (the reassigned property value)
-console.log(user.name)
+// // Will log 'Ronald' (the reassigned property value)
+// console.log(user.name)
 
 // Question 3
 // 'var a' is hoisted to the top scope, 
@@ -139,7 +139,7 @@ console.log(counter()); // Logs: 2 (count increments from 1 to 2 using the same 
    // mapped the array to return the nums in a new array multiplied by 2
 // const doubled = nums.map(num => num * 2);
 
-console.log(doubled); // Output = [2, 4, 6]
+// console.log(doubled); // Output = [2, 4, 6]
 
 // Question #13 — map() vs forEach()
 // What's the main difference?
@@ -151,11 +151,44 @@ console.log(doubled); // Output = [2, 4, 6]
 // D) map() only works with numbers
 
 // Question #14 — filter()
-// Create an variable with an array of numbers
-const nums = [1, 2, 3, 4, 5];
+   // Create an variable with an array of numbers
+// const nums = [1, 2, 3, 4, 5];
 
-// Create an variable named result, in which the nums will be filtered,
-// and return a new array of numbers greater than 2
-const result = nums.filter(num => num > 2);
+   // Create a variable named result, in which the nums will be filtered,
+   // and return a new array of numbers greater than 2
+// const result = nums.filter(num => num > 2);
 
-console.log(result); // Output = [3, 4, 5]
+// console.log(result); // Output = [3, 4, 5]
+
+// Question #15 — reduce()
+   // Create a variable with an array of numbers
+const nums = [1, 2, 3, 4];
+   // Create a variable named result, use the reduce to accumulate
+   // each array element into a running total, starting at 0
+const result = nums.reduce((total, num) => total + num, 0);
+
+// console.log(result) // Log: 10
+
+// Question 16 — Objects
+// Creates an object with properties representing a user
+// const user = {
+//   name: "Fernando",
+//   age: 40,
+//   sex: "male"
+// };
+
+// // Accesses and logs the value of the 'sex' property using dot notation
+// console.log(user.sex); // Logs: "male"
+
+// Question 17 — Destructuring
+// Creates an object with name and age properties
+const user = {
+  name: "Fernando",
+  age: 40
+};
+
+// Uses object destructuring to extract the 'name' 
+// property into a standalone variable
+const { name } = user;
+
+console.log(name); // Logs: "Fernando"
