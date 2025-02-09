@@ -209,3 +209,25 @@ const player = {
 const { age } = player;
 
 console.log(age)
+
+// // A) "age"
+      // B) 40 // My answer
+// C) undefined
+// D) Error
+
+// Question 19 — Array destructuring
+// Declares an array containing three color strings
+const colors = ["red", "blue", "green"];
+
+// Uses array destructuring to extract elements by their position (index)
+// 'first' gets colors[0] ("red") and 'second' gets colors[1] ("blue")
+const [first, second] = colors;
+
+// Accesses and logs the value stored in 'second'
+console.log(second); // Logs: "blue"
+
+// A) "red"
+      // B) "blue" // My Answer
+// C) "green"
+// D) undefined
+
