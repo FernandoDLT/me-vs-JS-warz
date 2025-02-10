@@ -215,7 +215,7 @@ console.log(age)
 // C) undefined
 // D) Error
 
-// Question 19 — Array destructuring
+// Question #19 — Array destructuring
 // Declares an array containing three color strings
 const colors = ["red", "blue", "green"];
 
@@ -230,4 +230,20 @@ console.log(second); // Logs: "blue"
       // B) "blue" // My Answer
 // C) "green"
 // D) undefined
+
+// Question #20 — Spread operator
+// Declares an array with three initial number elements
+const units = [1, 2, 3];
+
+// Uses the spread operator (...) to copy all elements from 'units' 
+// into a brand-new array, appending 4 at the end
+const newUnits = [...units, 4];
+
+// Accesses and logs the newly created array
+console.log(newUnits); // Logs: [1, 2, 3, 4]
+
+// A) [1, 2, 3]
+// B) [4, 1, 2, 3]
+      // C) [1, 2, 3, 4] // My answer
+// D) Error
 
