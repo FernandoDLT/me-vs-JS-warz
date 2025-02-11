@@ -247,3 +247,18 @@ console.log(newUnits); // Logs: [1, 2, 3, 4]
       // C) [1, 2, 3, 4] // My answer
 // D) Error
 
+// Question #21 — Rest parameter
+// The rest parameter (...numbers) gathers all passed 
+// arguments into a single array: [1, 2, 3]
+function sum(...numbers) {
+   // .reduce() iterates through [1, 2, 3],
+   // accumulating elements into a single sum starting at 0
+   return numbers.reduce((total, num) => total + num, 0);
+}
+
+// Calls sum() with arguments 1, 2, and 3; returns and logs 6
+console.log(sum(1, 2, 3)); // Output: 6
+// A) 3
+// B) 6
+// C) [1, 2, 3] My answer
+// D) Error
