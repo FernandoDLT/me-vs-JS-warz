@@ -263,7 +263,7 @@ console.log(sum(1, 2, 3)); // Output: 6
 // C) [1, 2, 3]
 // D) Error
 
-// Question 22 — === vs ==
+// Question #22 — === vs ==
 // Strict equality (===) checks both value AND data type.
 // Number vs String are different types, so this returns false.
 console.log(5 === "5"); // Logs: false
