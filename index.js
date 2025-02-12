@@ -275,3 +275,20 @@ console.log(5 == "5");  // Logs: true
 // B) false / false
 // C) false / true  // My answer
 // D) true / false
+
+// Question 23 — Truthy / Falsy
+// Arrays are objects in JS; all objects (even empty ones) are truthy
+console.log(Boolean([])); // Logs: true
+
+// Objects (even empty ones with no properties) are truthy
+console.log(Boolean({})); // Logs: true
+
+// Empty strings have a length of 0 and evaluate to falsy
+console.log(Boolean("")); // Logs: false
+
+// A) false / false / false
+// B) true / true / false // My answer
+// C) true / false / true
+// D) false / true / false
+
+//Empty arrays [] and objects {} are truthy. Empty strings "" are falsy.
