@@ -276,7 +276,7 @@ console.log(5 == "5");  // Logs: true
 // C) false / true  // My answer
 // D) true / false
 
-// Question 23 — Truthy / Falsy
+// Question #23 — Truthy / Falsy
 // Arrays are objects in JS; all objects (even empty ones) are truthy
 console.log(Boolean([])); // Logs: true
 
@@ -292,3 +292,21 @@ console.log(Boolean("")); // Logs: false
 // D) false / true / false
 
 //Empty arrays [] and objects {} are truthy. Empty strings "" are falsy.
+
+// Question #24 — null vs undefined
+// Variable declared without an assigned value defaults to 'undefined'
+let a;
+
+// Variable explicitly assigned the value 'null' (intentional absence of value)
+let d = null;
+
+// Logs 'undefined' because 'a' has no value set
+console.log(a); // Logs: undefined
+
+// Logs 'null' because 'd' was explicitly set to null
+console.log(d); // Logs: null
+
+// A) null / undefined
+// B) undefined / null // My answer
+// C) null / null
+// D) undefined / undefined
