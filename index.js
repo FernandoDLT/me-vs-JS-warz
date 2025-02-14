@@ -310,3 +310,21 @@ console.log(d); // Logs: null
 // B) undefined / null // My answer
 // C) null / null
 // D) undefined / undefined
+
+// Question #25 — Scope + closure
+// A function can access variables from its outer scope.
+// Variable declared in the global scope
+let m = 10;
+
+function test() {
+   // Accesses 'm' from its outer (global) scope via lexical scoping
+   console.log(m);
+}
+
+// Executes test(), printing the value of 'm'
+test(); // Logs: 10
+
+// A) undefined
+// B) 10 // My answer
+// C) ReferenceError
+// D) null
