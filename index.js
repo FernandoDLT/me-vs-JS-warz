@@ -259,6 +259,19 @@ function sum(...numbers) {
 // Calls sum() with arguments 1, 2, and 3; returns and logs 6
 console.log(sum(1, 2, 3)); // Output: 6
 // A) 3
-// B) 6
-// C) [1, 2, 3] My answer
+// B) 6 My answer
+// C) [1, 2, 3]
 // D) Error
+
+// Question 22 — === vs ==
+// Strict equality (===) checks both value AND data type.
+// Number vs String are different types, so this returns false.
+console.log(5 === "5"); // Logs: false
+
+// Loose equality (==) performs type coercion before comparing.
+// Converts the string "5" to the number 5, so this returns true.
+console.log(5 == "5");  // Logs: true
+// A) true / true
+// B) false / false
+// C) false / true  // My answer
+// D) true / false
