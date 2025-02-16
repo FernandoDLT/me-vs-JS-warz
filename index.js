@@ -190,13 +190,13 @@ const result = nums.reduce((total, num) => total + num, 0);
 // const name = user.name;
 
 // Creates an object with name and age properties
-const user = {
-  name: "Karl",
-  age: 40
-};
-// Uses object destructuring to extract the 'name' 
-// property into a standalone variable
-const { name } = user;
+// const user = {
+//   name: "Karl",
+//   age: 40
+// };
+// // Uses object destructuring to extract the 'name' 
+// // property into a standalone variable
+// const { name } = user;
 
 console.log(name); // Logs: "Fernando"
 
@@ -314,17 +314,31 @@ console.log(d); // Logs: null
 // Question #25 — Scope + closure
 // A function can access variables from its outer scope.
 // Variable declared in the global scope
-let m = 10;
+// let m = 10;
 
-function test() {
-   // Accesses 'm' from its outer (global) scope via lexical scoping
-   console.log(m);
-}
+// function test() {
+//    // Accesses 'm' from its outer (global) scope via lexical scoping
+//    console.log(m);
+// }
 
-// Executes test(), printing the value of 'm'
-test(); // Logs: 10
+// // Executes test(), printing the value of 'm'
+// test(); // Logs: 10
 
 // A) undefined
 // B) 10 // My answer
 // C) ReferenceError
 // D) null
+
+// Question #26 — this
+// Creates a user object with a 'name' property and a 'greet' method
+const user = {
+   name: "Mike",
+   lastName: "Flog",
+   greet() {
+      // 'this' refers to the object that called the method — here, 'user'
+      console.log(this.lastName);
+   }
+};
+
+// Calls the greet method on the 'user' object
+user.greet(); // Logs: "Mike"
