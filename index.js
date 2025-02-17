@@ -1,5 +1,7 @@
 // Start: JavaScript Fundamentals — let, const, scope
 
+const { ChartNoAxesColumnIncreasingIcon } = require("lucide-react");
+
 // #1
 // Variable 'x' is declared and assigned the
 // value of 10 in the outer/global scope
@@ -331,14 +333,27 @@ console.log(d); // Logs: null
 
 // Question #26 — this
 // Creates a user object with a 'name' property and a 'greet' method
-const user = {
-   name: "Mike",
-   lastName: "Flog",
-   greet() {
-      // 'this' refers to the object that called the method — here, 'user'
-      console.log(this.lastName);
-   }
-};
+// const user = {
+//    name: "Mike",
+//    lastName: "Flog",
+//    greet() {
+//       // 'this' refers to the object that called the method — here, 'user'
+//       console.log(this.lastName);
+//    }
+// };
 
 // Calls the greet method on the 'user' object
-user.greet(); // Logs: "Mike"
+// user.greet(); // Logs: "Mike"
+
+// Question #27 — Arrow functions + this
+const user = {
+  name: "Fernando",
+  // Arrow functions DO NOT get their own 'this'.
+  // 'this' is inherited from the outer scope (here, the global window/module scope),
+  // NOT from the 'user' object!
+  greet: () => {
+    console.log(this.name); // 'this.name' is undefined (or empty string in browsers)
+  }
+};
+
+user.greet(); // Logs: undefined
