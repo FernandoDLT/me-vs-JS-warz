@@ -357,3 +357,18 @@ const user = {
 };
 
 user.greet(); // Logs: undefined
+
+// Question #28 — Promises
+// Creates a Promise that immediately resolves with the value "Hello"
+const promise = Promise.resolve("Hello");
+
+// .then() registers a callback function to handle the resolved value
+promise.then(value => {
+   // 'value' receives "Hello" from the resolved promise
+   console.log(value); // Logs: "Hello"
+});
+
+// A) Promise
+// B) undefined
+// C) "Hello" // My answer
+// D) Error
