@@ -1,7 +1,4 @@
 // Start: JavaScript Fundamentals — let, const, scope
-
-const { ChartNoAxesColumnIncreasingIcon } = require("lucide-react");
-
 // #1
 // Variable 'x' is declared and assigned the
 // value of 10 in the outer/global scope
@@ -346,17 +343,17 @@ console.log(d); // Logs: null
 // user.greet(); // Logs: "Mike"
 
 // Question #27 — Arrow functions + this
-const user = {
-  name: "Fernando",
-  // Arrow functions DO NOT get their own 'this'.
-  // 'this' is inherited from the outer scope (here, the global window/module scope),
-  // NOT from the 'user' object!
-  greet: () => {
-    console.log(this.name); // 'this.name' is undefined (or empty string in browsers)
-  }
-};
+// const user = {
+//   name: "Fernando",
+//   // Arrow functions DO NOT get their own 'this'.
+//   // 'this' is inherited from the outer scope (here, the global window/module scope),
+//   // NOT from the 'user' object!
+//   greet: () => {
+//     console.log(this.name); // 'this.name' is undefined (or empty string in browsers)
+//   }
+// };
 
-user.greet(); // Logs: undefined
+// user.greet(); // Logs: undefined
 
 // Question #28 — Promises
 // Creates a Promise that immediately resolves with the value "Hello"
@@ -372,3 +369,12 @@ promise.then(value => {
 // B) undefined
 // C) "Hello" // My answer
 // D) Error
+
+// Question #29 — async/await
+// Declaring a function with 'async' automatically wraps its return value in a Promise
+async function getData() {
+   return "Hello"; // Equivalent to returning Promise.resolve("Hello")
+}
+
+// Calling 'getData()' returns the pending Promise object itself, not the direct string "Hello"
+console.log(getData()); // Output: Promise {<fulfilled>: 'Hello'}
