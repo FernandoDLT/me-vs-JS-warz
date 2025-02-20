@@ -357,13 +357,13 @@ console.log(d); // Logs: null
 
 // Question #28 — Promises
 // Creates a Promise that immediately resolves with the value "Hello"
-const promise = Promise.resolve("Hello");
+// const promise = Promise.resolve("Hello");
 
-// .then() registers a callback function to handle the resolved value
-promise.then(value => {
-   // 'value' receives "Hello" from the resolved promise
-   console.log(value); // Logs: "Hello"
-});
+// // .then() registers a callback function to handle the resolved value
+// promise.then(value => {
+//    // 'value' receives "Hello" from the resolved promise
+//    console.log(value); // Logs: "Hello"
+// });
 
 // A) Promise
 // B) undefined
@@ -372,9 +372,27 @@ promise.then(value => {
 
 // Question #29 — async/await
 // Declaring a function with 'async' automatically wraps its return value in a Promise
+// async function getData() {
+//    return "Hello"; // Equivalent to returning Promise.resolve("Hello")
+// }
+
+// // Calling 'getData()' returns the pending Promise object itself, not the direct string "Hello"
+// console.log(getData()); // Output: Promise {<fulfilled>: 'Hello'}
+
+// A) "Hello"
+// B) Promise // My answer
+// C) undefined
+// D) Error
+
+// Question #30 — await
+// Declares an asynchronous function, allowing the use of the 'await' keyword inside it
 async function getData() {
-   return "Hello"; // Equivalent to returning Promise.resolve("Hello")
+  // 'await' pauses function execution until the Promise resolves, unwrapping "Hello" directly into 'result'
+  const result = await Promise.resolve("Hello");
+  
+  // Logs the unwrapped string value, not the Promise object
+  console.log(result); // Logs: "Hello"
 }
 
-// Calling 'getData()' returns the pending Promise object itself, not the direct string "Hello"
-console.log(getData()); // Output: Promise {<fulfilled>: 'Hello'}
+// Executes the async function
+getData();
