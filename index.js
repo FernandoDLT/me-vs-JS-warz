@@ -395,4 +395,17 @@ async function getData() {
 }
 
 // Executes the async function
-getData();
+// getData();
+
+// Question 31 — Event Loop
+// Executes synchronously and logs immediately
+console.log("A"); // Logs: "A" (1st)
+
+// Schedules the callback function in the Web APIs / Task Queue.
+// Even with a 0ms delay, it waits for the synchronous call stack to clear.
+setTimeout(() => {
+   console.log("B"); // Logs: "B" (3rd)
+}, 0);
+
+// Executes synchronously right after "A"
+console.log("C"); // Logs: "C" (2nd)
