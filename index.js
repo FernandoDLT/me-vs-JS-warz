@@ -403,9 +403,36 @@ console.log("A"); // Logs: "A" (1st)
 
 // Schedules the callback function in the Web APIs / Task Queue.
 // Even with a 0ms delay, it waits for the synchronous call stack to clear.
+// setTimeout(() => {
+//    console.log("B"); // Logs: "B" (3rd)
+// }, 0);
+
+// // Executes synchronously right after "A"
+// console.log("C"); // Logs: "C" (2nd)
+
+// A) A, B, C
+// B) A, C, B // My Answer
+// C) B, A, C
+// D) C, A, B
+
+// Question #32 — Event Loop + Promise
+// Executes synchronously (Main Call Stack)
+console.log("A"); // Logs: "A" (1st)
+
+// Schedules callback in the Macrotask Queue (Task Queue)
 setTimeout(() => {
-   console.log("B"); // Logs: "B" (3rd)
+  console.log("B"); // Logs: "B" (4th)
 }, 0);
 
-// Executes synchronously right after "A"
-console.log("C"); // Logs: "C" (2nd)
+// Schedules callback in the Microtask Queue (Promise Jobs)
+Promise.resolve().then(() => {
+  console.log("C"); // Logs: "C" (3rd)
+});
+
+// Executes synchronously (Main Call Stack)
+console.log("D"); // Logs: "D" (2nd)
+
+// A) A, B, C, D
+// B) A, D, B, C
+// C) A, D, C, B // My answer
+// D) A, C, D, B
