@@ -476,15 +476,15 @@
 
 // // Question #35 - Arrow function
 // // Uses an implicit return arrow function with .filter() to extract even numbers
-// const onlyEvens = arr => arr.filter(number => number % 2 === 0);
+const onlyEvens = arr => arr.filter(number => number % 2 === 0);
 
-// console.log(onlyEvens([12, 5, 34, 21, 60, 14])); // Logs: [12, 34, 60, 14]
+console.log(onlyEvens([12, 5, 34, 21, 60, 14])); // Logs: [12, 34, 60, 14]
 
-// function evensOnly(arr) {
-//    return arr.filter(number => number % 2 === 0);
-// }
+function evensOnly(arr) {
+   return arr.filter(number => number % 2 === 0);
+}
 
-// console.log(evensOnly([12, 5, 34, 21, 60, 14]))
+console.log(evensOnly([12, 5, 34, 21, 60, 14]))
 
 // Question #35
 // Accepts an array of numbers and returns the largest value found
