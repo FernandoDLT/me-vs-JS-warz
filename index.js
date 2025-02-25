@@ -437,19 +437,51 @@
 // C) A, D, C, B // My answer
 // D) A, C, D, B
 
-// Question 33 — Coding
+// Question #33 — Coding
 // Write a function that takes an array of numbers and returns
 // a new array containing only the even numbers.
 
+// Accepts an array of numbers and filters out odd values
 function getEvens(arr) {
+   // Initializes an empty array to store the filtered even numbers
    const result = [];
 
-   for (let i = 0; i < arr.length ;i++) {
+   // Loops through each element in the input array by index
+   for (let i = 0; i < arr.length; i++) {
+      // Uses the modulo operator (%) to check if the current number is divisible by 2 with no remainder
       if (arr[i] % 2 === 0) {
-         result.push(arr[i])
+         // Appends the even number to the 'result' array
+         result.push(arr[i]);
       }
    }
+   // Returns the array containing only the even numbers
    return result;
-};
+}
 
-console.log(getEvens([1, 2, 3, 4, 5, 6, 30])) // Output: [2, 4, 6]
+// Calls 'getEvens' with an array of numbers and logs the returned array
+console.log(getEvens([1, 2, 3, 4, 5, 6, 30])); // Output: [2, 4, 6, 30]
+
+// Question #34 — Rewrite it using filter()
+// Accepts an array of numbers and returns a new array containing only even numbers
+function getEvens(arr) {
+   // .filter() iterates over 'arr' and passes each element into the callback function
+   return arr.filter(function (number) {
+      // Returns true if 'number' is even, keeping it in the new array; false drops it
+      return number % 2 === 0;
+   });
+}
+
+// Calls 'getEvens' and logs the filtered output array
+console.log(getEvens([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
+
+// Question #35 - Arrow function
+// Uses an implicit return arrow function with .filter() to extract even numbers
+const onlyEvens = arr => arr.filter(number => number % 2 === 0);
+
+console.log(onlyEvens([12, 5, 34, 21, 60, 14])); // Logs: [12, 34, 60, 14]
+
+function evensOnly(arr) {
+   return arr.filter(number => number % 2 === 0);
+}
+
+console.log(evensOnly([12, 5, 34, 21, 60, 14]))
