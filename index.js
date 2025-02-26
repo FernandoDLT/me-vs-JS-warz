@@ -442,46 +442,74 @@
 // a new array containing only the even numbers.
 
 // Accepts an array of numbers and filters out odd values
-function getEvens(arr) {
-   // Initializes an empty array to store the filtered even numbers
-   const result = [];
+// function getEvens(arr) {
+//    // Initializes an empty array to store the filtered even numbers
+//    const result = [];
 
-   // Loops through each element in the input array by index
-   for (let i = 0; i < arr.length; i++) {
-      // Uses the modulo operator (%) to check if the current number is divisible by 2 with no remainder
-      if (arr[i] % 2 === 0) {
-         // Appends the even number to the 'result' array
-         result.push(arr[i]);
-      }
-   }
-   // Returns the array containing only the even numbers
-   return result;
-}
+//    // Loops through each element in the input array by index
+//    for (let i = 0; i < arr.length; i++) {
+//       // Uses the modulo operator (%) to check if the current number is divisible by 2 with no remainder
+//       if (arr[i] % 2 === 0) {
+//          // Appends the even number to the 'result' array
+//          result.push(arr[i]);
+//       }
+//    }
+//    // Returns the array containing only the even numbers
+//    return result;
+// }
 
-// Calls 'getEvens' with an array of numbers and logs the returned array
-console.log(getEvens([1, 2, 3, 4, 5, 6, 30])); // Output: [2, 4, 6, 30]
+// // Calls 'getEvens' with an array of numbers and logs the returned array
+// console.log(getEvens([1, 2, 3, 4, 5, 6, 30])); // Output: [2, 4, 6, 30]
 
-// Question #34 — Rewrite it using filter()
-// Accepts an array of numbers and returns a new array containing only even numbers
-function getEvens(arr) {
-   // .filter() iterates over 'arr' and passes each element into the callback function
-   return arr.filter(function (number) {
-      // Returns true if 'number' is even, keeping it in the new array; false drops it
-      return number % 2 === 0;
-   });
-}
+// // Question #34 — Rewrite it using filter()
+// // Accepts an array of numbers and returns a new array containing only even numbers
+// function getEvens(arr) {
+//    // .filter() iterates over 'arr' and passes each element into the callback function
+//    return arr.filter(function (number) {
+//       // Returns true if 'number' is even, keeping it in the new array; false drops it
+//       return number % 2 === 0;
+//    });
+// }
 
-// Calls 'getEvens' and logs the filtered output array
-console.log(getEvens([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
+// // Calls 'getEvens' and logs the filtered output array
+// console.log(getEvens([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
 
-// Question #35 - Arrow function
-// Uses an implicit return arrow function with .filter() to extract even numbers
-const onlyEvens = arr => arr.filter(number => number % 2 === 0);
+// // Question #35 - Arrow function
+// // Uses an implicit return arrow function with .filter() to extract even numbers
+// const onlyEvens = arr => arr.filter(number => number % 2 === 0);
 
-console.log(onlyEvens([12, 5, 34, 21, 60, 14])); // Logs: [12, 34, 60, 14]
+// console.log(onlyEvens([12, 5, 34, 21, 60, 14])); // Logs: [12, 34, 60, 14]
 
-function evensOnly(arr) {
-   return arr.filter(number => number % 2 === 0);
-}
+// function evensOnly(arr) {
+//    return arr.filter(number => number % 2 === 0);
+// }
 
-console.log(evensOnly([12, 5, 34, 21, 60, 14]))
+// console.log(evensOnly([12, 5, 34, 21, 60, 14]))
+
+// // Question #35
+// // Accepts an array of numbers and returns the largest value found
+// function largestNum(arr) {
+//    // Initializes 'current' with the first element of the array as the benchmark
+//    let current = arr[0];
+
+//    // Loops through every element in the array starting from index 0
+//    for (let i = 0; i < arr.length; i++) {
+//       // Compares the current element with our recorded highest value
+//       if (arr[i] > current) {
+//          // Updates 'current' if a strictly larger number is found
+//          current = arr[i];
+//       }
+//    }
+//    // Returns the largest value after checking every item
+//    return current;
+// }
+
+// console.log(largestNum([3, 7, 2, 9, 4])) // Log: 9
+
+// Pro-tip: 
+// While this for loop logic is fundamental,
+// modern JavaScript lets you find the maximum value instantly
+// using Math.max() with the spread operator (...):
+const largestNum = arr => Math.max(...arr);
+
+console.log(largestNum([3, 7, 2, 9, 4])) // Log: 9
