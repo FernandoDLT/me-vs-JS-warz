@@ -486,30 +486,34 @@
 
 // console.log(evensOnly([12, 5, 34, 21, 60, 14]))
 
-// // Question #35
-// // Accepts an array of numbers and returns the largest value found
-// function largestNum(arr) {
-//    // Initializes 'current' with the first element of the array as the benchmark
-//    let current = arr[0];
+// Question #35
+// Accepts an array of numbers and returns the largest value found
+function largestNum(arr) {
+   // Initializes 'current' with the first element of the array as the benchmark
+   let current = arr[0];
 
-//    // Loops through every element in the array starting from index 0
-//    for (let i = 0; i < arr.length; i++) {
-//       // Compares the current element with our recorded highest value
-//       if (arr[i] > current) {
-//          // Updates 'current' if a strictly larger number is found
-//          current = arr[i];
-//       }
-//    }
-//    // Returns the largest value after checking every item
-//    return current;
-// }
+   // Loops through every element in the array starting from index 0
+   for (let i = 0; i < arr.length; i++) {
+      // Compares the current element with our recorded highest value
+      if (arr[i] > current) {
+         // Updates 'current' if a strictly larger number is found
+         current = arr[i];
+      }
+   }
+   // Returns the largest value after checking every item
+   return current;
+}
 
-// console.log(largestNum([3, 7, 2, 9, 4])) // Log: 9
+console.log(largestNum([3, 7, 2, 9, 4])) // Log: 9
 
 // Pro-tip: 
 // While this for loop logic is fundamental,
 // modern JavaScript lets you find the maximum value instantly
 // using Math.max() with the spread operator (...):
-const largestNum = arr => Math.max(...arr);
+const biggestNum = arr => Math.max(...arr);
 
-console.log(largestNum([3, 7, 2, 9, 4])) // Log: 9
+console.log(biggestNum([3, 7, 2, 9, 4])) // Log: 9
+
+const theBigNum = arr => Math.max(...arr)
+console.log(theBigNum([3, 7, 2, 9, 4, 12, 2, 8, 13, 29])) // Log: 13
+
