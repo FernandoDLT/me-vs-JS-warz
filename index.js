@@ -517,3 +517,25 @@ console.log(biggestNum([3, 7, 2, 9, 4])) // Log: 9
 const theBigNum = arr => Math.max(...arr)
 console.log(theBigNum([3, 7, 2, 9, 4, 12, 2, 8, 13, 29])) // Log: 13
 
+// Question #36
+function secondLargest(arr) {
+   // Initialize tracking variables to the lowest possible numerical value
+   let first = -Infinity;
+   let second = -Infinity;
+
+   for (let i = 0; i < arr.length; i++) {
+      // Case 1: Found a new highest number
+      if (arr[i] > first) {
+         second = first;  // The old 1st place becomes 2nd place
+         first = arr[i];  // Set the new 1st place champion
+      } 
+      // Case 2: Found a number between 'first' and 'second'
+      else if (arr[i] > second && arr[i] !== first) {
+         second = arr[i]; // Update 2nd place
+      }
+   }
+
+   return second;
+}
+
+console.log(secondLargest([3, 7, 2, 9, 4])); // Logs: 7
