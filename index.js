@@ -539,3 +539,25 @@ function secondLargest(arr) {
 }
 
 console.log(secondLargest([3, 7, 2, 9, 4])); // Logs: 7
+
+
+// Question #37
+// Initializes an array containing three numeric values
+const numz = [10, 20, 30];
+
+// Standard for-loop:
+// 1. Sets index counter 'i' to 0 (starts at the first element)
+// 2. Runs as long as 'i' is less than numz.length (3)
+// 3. Increments 'i' by 1 on each iteration
+for (let i = 0; i < numz.length; i++) {
+   // Accesses the array element at index 'i' and prints its value (not the index itself)
+   // Iteration 0: numz[0] -> 10
+   // Iteration 1: numz[1] -> 20
+   // Iteration 2: numz[2] -> 30
+   console.log(numz[i]);
+}
+
+// A) 0 1 2
+// B) 10 20 30 // My answer
+// C) 10 30
+// D) undefined
