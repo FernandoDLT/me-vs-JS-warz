@@ -549,7 +549,6 @@ console.log(theBigNum([3, 7, 2, 9, 4, 12, 2, 8, 13, 29])) // Log: 13
 // We create a function called countNumbers.
 // "arr" is the parameter — it will represent the array we give the function.
 function countNumbers(arr) { 
-
    // Create an empty object.
    // We will use it to keep track of how many times each number appears.
    let returned = {}; 
@@ -580,7 +579,7 @@ function countNumbers(arr) {
    // Give the completed object back to whoever called the function.
    return returned; 
 }
-console.log(countNumbers([1, 2, 2, 3, 3, 3]))
+console.log(countNumbers([1, 3, 1, 1, 2, 2, 3, 3, 3]))
 // {
 //   1: 1,
 //   2: 2,
