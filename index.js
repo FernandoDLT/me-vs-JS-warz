@@ -551,25 +551,22 @@ console.log(theBigNum([3, 7, 2, 9, 4, 12, 2, 8, 13, 29])) // Log: 13
 function countNumbers(arr) { 
    // Create an empty object.
    // We will use it to keep track of how many times each number appears.
+   // Keeps the count
    let returned = {}; 
  
    // Go through the array one item at a time.
    // "i" starts at 0 and increases by 1 each time.
    for (let i = 0; i < arr.length; i++) { 
-
       // Get the current number from the array
       // and store it in a variable called "num".
       let num = arr[i]; 
  
       // Does our object already have this number?
       if (returned[num]) { 
-
          // YES! It already exists.
          // Add 1 to its current count.
          returned[num] += 1; 
-
       } else { 
-
          // NO! We haven't seen this number before.
          // Create it in the object and give it a count of 1.
          returned[num] = 1; 
@@ -607,4 +604,18 @@ console.log(countNumbers([1, 3, 1, 1, 2, 2, 3, 3, 3]))
 // B) 10 20 30 // My answer
 // C) 10 30
 // D) undefined
+
+// Question #38 — if / else
+const num = 7;
+
+if (num > 5) {
+   console.log("BIG");
+} else {
+   console.log("Small")
+}
+
+// A) Big // My answer
+// B) Small
+// C) 7
+// D) Nothing
 
