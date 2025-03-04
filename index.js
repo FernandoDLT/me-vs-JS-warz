@@ -619,3 +619,17 @@ if (num > 5) {
 // C) 7
 // D) Nothing
 
+// Question #39 — if / else
+const numb = 4;
+
+if (numb > 5) {
+      console.log("BIG");
+} else {
+   console.log("Small")
+}
+
+// A) Big
+// B) Small // My answer
+// C) 4
+// D) Nothing
+
