@@ -633,3 +633,17 @@ if (numb > 5) {
 // C) 4
 // D) Nothing
 
+const numero = 5;
+
+if (numero > 5) {
+   console.log("Big")
+} else if (numero === 5) {
+   console.log("Exactly 5")
+} else {
+   console.log("Small")
+}
+
+// A) Big
+// B) Exactly 5 // My answer
+// C) Small
+// D) Nothing
