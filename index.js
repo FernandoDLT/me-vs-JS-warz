@@ -647,3 +647,15 @@ if (numero > 5) {
 // B) Exactly 5 // My answer
 // C) Small
 // D) Nothing
+
+// Question #41 — Comparison operators
+const numbb = 10 
+
+console.log(num > 5);
+console.log(num < 5);
+console.log(num === 10);
+
+// A) true / false / true // My answer
+// B) false / true / false
+// C) true / true / false
+// D) false / false / true
