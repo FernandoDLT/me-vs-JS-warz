@@ -659,3 +659,12 @@ console.log(num === 10);
 // B) false / true / false
 // C) true / true / false
 // D) false / false / true
+
+// Question #42 — Modulo %
+console.log(10 % 2);
+console.log(11 % 2);
+
+// A) 0 / 1 // My answer
+// B) 1 / 0
+// C) 5 / 5
+// D) 2 / 1
