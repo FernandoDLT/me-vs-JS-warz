@@ -668,3 +668,17 @@ console.log(11 % 2);
 // B) 1 / 0
 // C) 5 / 5
 // D) 2 / 1
+
+// Question #43 — Modulo + if
+const numm = 7;
+
+if (numm % 2 === 0) {
+   console.log("Even");
+} else {
+   console.log("Odd")
+}
+
+// A) Even
+// B) Odd // My answer
+// C) 7
+// D) Nothing
