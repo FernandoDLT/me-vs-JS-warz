@@ -682,3 +682,25 @@ if (numm % 2 === 0) {
 // B) Odd // My answer
 // C) 7
 // D) Nothing
+
+// // Question #44
+// Write a function called isEven that:
+
+// Takes one number
+// Returns true if it's even
+// Returns false if it's odd
+function isEven(nummb) {
+   if (nummb % 2 === 0) {
+      return true;
+   } else {
+      return false;
+   }
+}
+
+// Pro tip
+// function isEven(num) {
+//    return num % 2 === 0;
+// }
+
+console.log(isEven(8))  // true
+console.log(isEven(7))  // flase
