@@ -704,3 +704,10 @@ function isEven(nummb) {
 
 console.log(isEven(8))  // true
 console.log(isEven(7))  // flase
+
+// #45 
+// create an array of TV shows Loop through and print each show to the console
+let tvShows = ["Threes Company", "Gilligan's Island", "Maxwell Smart"]
+
+tvShows.forEach( show => console.log( show ) )
+
