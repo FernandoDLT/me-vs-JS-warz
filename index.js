@@ -705,9 +705,18 @@ function isEven(nummb) {
 console.log(isEven(8))  // true
 console.log(isEven(7))  // flase
 
+//LEON YT CLASS #21 @2:10ish
+
 // #45 
 // create an array of TV shows Loop through and print each show to the console
 let tvShows = ["Threes Company", "Gilligan's Island", "Maxwell Smart"]
 
 tvShows.forEach( show => console.log( show ) )
 
+// create an array of numbers
+let nums = [3, 88, 15, 31, 4, 43, 6, 12, 8, 9, 13]
+// return a new array of numbers that includes every even number
+// from the previous array
+let onlyEvenz = arr => arr.filter ( n => n % 2 === 0 )
+
+console.log(onlyEvenz( nums ))
