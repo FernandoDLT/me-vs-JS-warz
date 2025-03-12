@@ -719,4 +719,14 @@ let nums = [3, 88, 15, 31, 4, 43, 6, 12, 8, 9, 13]
 // from the previous array
 let onlyEvenz = arr => arr.filter ( n => n % 2 === 0 )
 
-console.log(onlyEvenz( nums ))
+console.log(onlyEvenz(nums))
+
+// #46 
+// Create a function that takes in an array of numbers,
+// Alert the sum of the second lowest and the second highest number
+function sumSecondLowAndHigh(arr) {
+   let sorted = arr.sort((a, b) => a - b)
+   alert ( sorted[1] + sorted[ sorted.length -2] )
+}
+
+sumSecondLowAndHigh([4, 2, 5, 1, 3])
