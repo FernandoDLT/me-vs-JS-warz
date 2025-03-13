@@ -730,3 +730,14 @@ function sumSecondLowAndHigh(arr) {
 }
 
 sumSecondLowAndHigh([4, 2, 5, 1, 3])
+
+// #47 Objects
+let stopwatch = {}
+
+stopwatch.currenTime = 12
+
+stopwatch.tellTime = function (time) {
+   console.log(`The current time is ${time}.`)
+}
+
+stopwatch.tellTime(stopwatch.currenTime)
