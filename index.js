@@ -729,15 +729,24 @@ function sumSecondLowAndHigh(arr) {
    alert ( sorted[1] + sorted[ sorted.length -2] )
 }
 
-sumSecondLowAndHigh([4, 2, 5, 1, 3])
+// sumSecondLowAndHigh([4, 2, 5, 1, 3])
 
 // #47 Objects
-let stopwatch = {}
+let stopwatch = {} // Literal notation/created an object
 
-stopwatch.currenTime = 12
+stopwatch.brand = "Nike"
+stopwatch.color = "black"
+stopwatch.shape = "round"
+stopwatch.size = "small"
 
-stopwatch.tellTime = function (time) {
-   console.log(`The current time is ${time}.`)
+stopwatch.start = function() {
+   console.log("Startiiiing!!")
+}
+stopwatch.stop = function() {
+   console.log("Stopinnnng!")
+}
+stopwatch.sayBrand = function() {
+   console.log(stopwatch.brand)
 }
 
 stopwatch.tellTime(stopwatch.currenTime)
