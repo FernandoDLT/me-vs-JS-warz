@@ -732,21 +732,38 @@ function sumSecondLowAndHigh(arr) {
 // sumSecondLowAndHigh([4, 2, 5, 1, 3])
 
 // #47 Objects
-let stopwatch = {} // Literal notation/created an object
+// let stopwatch = {} // Literal notation/created an object
 
-stopwatch.brand = "Nike"
-stopwatch.color = "black"
-stopwatch.shape = "round"
-stopwatch.size = "small"
+// stopwatch.brand = "Nike"
+// stopwatch.color = "black"
+// stopwatch.shape = "round"
+// stopwatch.size = "small"
 
-stopwatch.start = function() {
-   console.log("Startiiiing!!")
-}
-stopwatch.stop = function() {
-   console.log("Stopinnnng!")
-}
-stopwatch.sayBrand = function() {
-   console.log(stopwatch.brand)
-}
+// stopwatch.start = function() {
+//    console.log("Startiiiing!!")
+// }
+// stopwatch.stop = function() {
+//    console.log("Stopinnnng!")
+// }
+// stopwatch.sayBrand = function() {
+//    console.log(stopwatch.brand)
+// }
 
-stopwatch.tellTime(stopwatch.currenTime)
+// stopwatch.tellTime(stopwatch.currenTime)
+
+let car = {}
+
+car.brand = "toyota"
+car.make = "camry"
+car.color = "Red"
+car.doors = 4
+
+car.honk = function () {
+   console.log("Honk! Honk! Honk!")
+}
+car.speeding = function () {
+   console.log("Slow down, my homie!")
+}
+car.autopilot = function () {
+   console.log("Auto pilot has been engaged, lay back and enjoy the ride.")
+}
