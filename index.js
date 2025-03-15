@@ -767,3 +767,22 @@ car.speeding = function () {
 car.autopilot = function () {
    console.log("Auto pilot has been engaged, lay back and enjoy the ride.")
 }
+
+let coffeeMaker = {} 
+
+coffeeMaker.brand = "Mr. Coffee"
+coffeeMaker.model = "The Brew Master"
+coffeeMaker.cupsCapacity = 12
+coffeeMaker.color = "Black"
+
+coffeeMaker.brew = function() {
+   console.log("Now brewing the world's best coffee")
+}
+
+coffeeMaker.hotPlate = function () {
+   console.log("Caution: The coffee plate is scrortching hot!")
+}
+
+coffeeMaker.alarm = function () {
+   console.log("Beeping, beeping, beeping, can you not hear the beep?")
+}
