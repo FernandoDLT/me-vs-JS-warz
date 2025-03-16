@@ -786,3 +786,26 @@ coffeeMaker.hotPlate = function () {
 coffeeMaker.alarm = function () {
    console.log("Beeping, beeping, beeping, can you not hear the beep?")
 }
+
+let cars = ["Porsche", "Ferrari", "Buggati"]
+
+cars.push("McKlaren")
+cars = cars.filter( car => car !=="Porsche")
+
+cars.forEach(car => console.log(car))
+
+//
+let fruits = ["apples", "oranges", "kiwis"]
+fruits = fruits.filter(fruit => fruit !== "apples")
+fruits.push("pineapples")
+fruits.forEach(fruit => console.log(fruit))
+
+//
+let resorts = ["Wyndham", "Riu", "Hyatt"]
+
+resorts.push("Holday Inn");
+resorts.reverse();
+
+resorts = resorts.filter( resort => resort !== "Hyatt")
+
+resorts.forEach(resort => console.log(resort))
