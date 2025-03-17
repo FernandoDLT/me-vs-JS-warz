@@ -724,10 +724,10 @@ console.log(onlyEvenz(nums))
 // #46 
 // Create a function that takes in an array of numbers,
 // Alert the sum of the second lowest and the second highest number
-function sumSecondLowAndHigh(arr) {
-   let sorted = arr.sort((a, b) => a - b)
-   alert ( sorted[1] + sorted[ sorted.length -2] )
-}
+// function sumSecondLowAndHigh(arr) {
+//    let sorted = arr.sort((a, b) => a - b)
+//    alert ( sorted[1] + sorted[ sorted.length -2] )
+// }
 
 // sumSecondLowAndHigh([4, 2, 5, 1, 3])
 
@@ -809,3 +809,39 @@ resorts.reverse();
 resorts = resorts.filter( resort => resort !== "Hyatt")
 
 resorts.forEach(resort => console.log(resort))
+
+// create an array of golf club sets Loop through and print each set to the console
+let golfClubs = ["TaylorMade", "Ping", "Nike"]
+
+golfClubs.forEach(clubSet => console.log(clubSet))
+
+// create an array of veggies Loop through and print each show to the console
+let veggies = ["carrots", "peas", "potatoes"]
+
+veggies.forEach( veggie => console.log (veggie) )
+
+// Create a function that takes in an array of numbers,
+// Alert the sum of the second lowest and the second highest number
+// function sumSecondLowAndHigh(arr) {
+//    let sorted = arr.sort((a, b) => a - b)
+//    alert ( sorted[1] + sorted[ sorted.length -2] )
+// }
+
+
+function sumSecondLowAndHi(arr) {
+   let sorted = arr.sort((a, b) => a - b)
+   alert ( sorted[1] + sorted[ sorted.length -2] )
+}
+
+sumSecondLowAndHi([4, 2, 5, 1, 3])
+
+// Create an array of numbers
+let numx = [4, 1, 420, 6, 7, 9, 10, 720]
+
+// we create an arrow function with arr and use the filter method
+let onlyEvenzz = arr => arr.filter( n => n % 2 === 0 )
+// return a new array of numbers that includes every even number
+// numx = numx.filter(num => num % 2 === 0)
+// console.log(numx)
+console.log(onlyEvenzz (numx))
+// from the previous array
