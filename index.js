@@ -822,26 +822,42 @@ veggies.forEach( veggie => console.log (veggie) )
 
 // Create a function that takes in an array of numbers,
 // Alert the sum of the second lowest and the second highest number
-// function sumSecondLowAndHigh(arr) {
-//    let sorted = arr.sort((a, b) => a - b)
-//    alert ( sorted[1] + sorted[ sorted.length -2] )
-// }
+function sumSecondLowAndHigh(arr) {
+   let sorted = arr.sort((a, b) => a - b)
+   alert ( sorted[1] + sortedsorted.length [-2] )
+}
 
+// function addSecondLowAndSecondHi(arr) {
+//    let sorted = arr.sort((a, b) => a - b)
+//    alert ( sorted[1] + sorted[sorted.length-2] )
+// }
+// addSecondLowAndSecondHi([4, 1, 420, 6, 7, 9, 10, 720])
 
 function sumSecondLowAndHi(arr) {
    let sorted = arr.sort((a, b) => a - b)
-   alert ( sorted[1] + sorted[ sorted.length -2] )
+   alert ( sorted[ 1 ] + sorted[ sorted.length -2] )
 }
 
 sumSecondLowAndHi([4, 2, 5, 1, 3])
 
 // Create an array of numbers
-let numx = [4, 1, 420, 6, 7, 9, 10, 720]
+// let numx = [4, 1, 420, 6, 7, 9, 10, 720]
 
 // we create an arrow function with arr and use the filter method
 let onlyEvenzz = arr => arr.filter( n => n % 2 === 0 )
 // return a new array of numbers that includes every even number
 // numx = numx.filter(num => num % 2 === 0)
 // console.log(numx)
-console.log(onlyEvenzz (numx))
+// console.log(onlyEvenzz (numx))
 // from the previous array
+
+// function sumSecondLowAndHigh(arr) {
+//    let sorted = arr.sort((a, b) => a - b)
+//    alert ( sorted[1] + sorted[sorted.length -2] )
+// }
+
+function addSecondLowAndSecondHi(arr) {
+   let sorted = arr.sort((a, b) => a - b)
+   alert (sorted [1] + sorted[sorted.length - 2])
+}
+addSecondLowAndSecondHi([4, 1, 420, 6, 7, 9, 10, 720])
