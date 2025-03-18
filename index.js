@@ -807,57 +807,58 @@ resorts.push("Holday Inn");
 resorts.reverse();
 
 resorts = resorts.filter( resort => resort !== "Hyatt")
-
 resorts.forEach(resort => console.log(resort))
 
 // create an array of golf club sets Loop through and print each set to the console
 let golfClubs = ["TaylorMade", "Ping", "Nike"]
-
 golfClubs.forEach(clubSet => console.log(clubSet))
 
 // create an array of veggies Loop through and print each show to the console
 let veggies = ["carrots", "peas", "potatoes"]
-
 veggies.forEach( veggie => console.log (veggie) )
 
 // Create a function that takes in an array of numbers,
 // Alert the sum of the second lowest and the second highest number
-function sumSecondLowAndHigh(arr) {
-   let sorted = arr.sort((a, b) => a - b)
-   alert ( sorted[1] + sortedsorted.length [-2] )
-}
+// function sumSecondLowAndHi(arr) {
+//    let sorted = arr.sort((a, b) => a - b)
+//    alert ( sorted[ 1 ] + sorted[ sorted.length -2] )
+// }
+
+// sumSecondLowAndHi([4, 2, 5, 1, 3])
+
+// Create an array of numbers
+let numx = [4, 1, 42, 6, 17, 9, 10, 2]
+// we create an arrow function with arr and use the filter method...
+// that return a new array of numbers that includes every even number
+// from the previous array
+let onlyEvenzz = arr => arr.filter( n => n % 2 === 0 )
+console.log(onlyEvenzz(numx)) 
+
+let numzies = [4, 1, 420, 62, 17, 9, 110, 72]
+
+numzies = numzies.filter(num => num % 2 === 0)
+console.log(onlyEvenzz(numzies))
 
 // function addSecondLowAndSecondHi(arr) {
 //    let sorted = arr.sort((a, b) => a - b)
-//    alert ( sorted[1] + sorted[sorted.length-2] )
+//    alert (sorted [1] + sorted[sorted.length - 2])
 // }
 // addSecondLowAndSecondHi([4, 1, 420, 6, 7, 9, 10, 720])
 
-function sumSecondLowAndHi(arr) {
-   let sorted = arr.sort((a, b) => a - b)
-   alert ( sorted[ 1 ] + sorted[ sorted.length -2] )
+// Question #48 — if / else
+const digit = 10
+
+if (digit >= 10) {
+   console.log("Yes")
+} else {
+   console.log("No")
 }
 
-sumSecondLowAndHi([4, 2, 5, 1, 3])
+// Question #48 — &&
+const age = 25
 
-// Create an array of numbers
-// let numx = [4, 1, 420, 6, 7, 9, 10, 720]
-
-// we create an arrow function with arr and use the filter method
-let onlyEvenzz = arr => arr.filter( n => n % 2 === 0 )
-// return a new array of numbers that includes every even number
-// numx = numx.filter(num => num % 2 === 0)
-// console.log(numx)
-// console.log(onlyEvenzz (numx))
-// from the previous array
-
-// function sumSecondLowAndHigh(arr) {
-//    let sorted = arr.sort((a, b) => a - b)
-//    alert ( sorted[1] + sorted[sorted.length -2] )
-// }
-
-function addSecondLowAndSecondHi(arr) {
-   let sorted = arr.sort((a, b) => a - b)
-   alert (sorted [1] + sorted[sorted.length - 2])
+if (age >= 18 && age < 65) {
+   console.log("Working age")
+} else {
+   console.log("Under age")
 }
-addSecondLowAndSecondHi([4, 1, 420, 6, 7, 9, 10, 720])
