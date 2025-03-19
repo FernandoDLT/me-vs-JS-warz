@@ -862,3 +862,12 @@ if (age >= 18 && age < 65) {
 } else {
    console.log("Under age")
 }
+
+// Question #50 — || "or"
+const day = "Saturday";
+
+if (day === "Saturday" && day === "Sunday") {
+   console.log("Weekend")
+} else {
+   console.log("Weekday")
+}
