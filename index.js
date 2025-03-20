@@ -871,3 +871,14 @@ if (day === "Saturday" && day === "Sunday") {
 } else {
    console.log("Weekday")
 }
+
+// Question #51 — ! (NOT)
+const IsLoggedIn = false;
+
+if (!IsLoggedIn) {
+   console.log("Please Log in");
+} else {
+   console.log("Welcome to the Matrix")
+}
+
+// Output: "Please log in"
