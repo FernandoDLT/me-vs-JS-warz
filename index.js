@@ -880,5 +880,15 @@ if (!IsLoggedIn) {
 } else {
    console.log("Welcome to the Matrix")
 }
-
 // Output: "Please log in"
+
+// Question #52 — Combine conditions
+const nummm = 12
+
+if (nummm > 10 && nummm < 20) {
+   console.log("In range")
+} else {
+   console.log("Out of range")
+}
+// Output: "In range"
+
