@@ -892,3 +892,8 @@ if (nummm > 10 && nummm < 20) {
 }
 // Output: "In range"
 
+// Question #53 — for loop
+for (let i = 0; i < 3; i++) {
+   console.log(i);
+}
+// The loop starts at the ) index. 
