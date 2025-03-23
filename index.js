@@ -896,4 +896,12 @@ if (nummm > 10 && nummm < 20) {
 for (let i = 0; i < 3; i++) {
    console.log(i);
 }
-// The loop starts at the ) index. 
+// The loop starts at the ) index.
+
+// Question #54 — Loop + array
+const numbies = [5, 10, 15];
+
+for (let i = 0; i < numbies.length; i++) {
+   console.log(numbies[i])
+}
+// Output: 5, 10, 15
