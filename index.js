@@ -905,3 +905,13 @@ for (let i = 0; i < numbies.length; i++) {
    console.log(numbies[i])
 }
 // Output: 5, 10, 15
+
+// Question #55 — Loop + condition
+const numbos = [5, 10, 15, 20];
+
+for (let i = 0; i < numbos.length; i++) {
+   if (numbos[i] > 10)
+      console.log(numbos[1]);
+}
+// Output: 15, 20
+
