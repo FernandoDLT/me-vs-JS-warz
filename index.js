@@ -915,3 +915,11 @@ for (let i = 0; i < numbos.length; i++) {
 }
 // Output: 15, 20
 
+// Question #56 — Loop + push()
+const numr = [1, 2, 3];
+const result = [];
+
+for (let i = 0; i < numr.length; i++) {
+   result.push(numr[i] * 2)
+}
+console.log(result); // 2, 4, 6
