@@ -923,3 +923,14 @@ for (let i = 0; i < numr.length; i++) {
    result.push(numr[i] * 2)
 }
 console.log(result); // 2, 4, 6
+
+// Question #57 — Build the pattern
+function doubleNumbers(arr) {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+   result.push(arr[i] * 2)
+  }
+  return result;
+}
+console.log(doubleNumbers([3, 5, 8, 12, 4, 6]))
