@@ -934,3 +934,15 @@ function doubleNumbers(arr) {
   return result;
 }
 console.log(doubleNumbers([3, 5, 8, 12, 4, 6]))
+
+// Question #58 — Same pattern, new task
+function onlyOddNumbers(arr) {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) result.push(arr[i])
+  }
+  return result;
+}
+
+console.log(onlyOddNumbers([1, 2, 3, 4, 5])); // [1, 3, 5]
