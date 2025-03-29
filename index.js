@@ -947,15 +947,27 @@ function onlyOddNumbers(arr) {
 
 console.log(onlyOddNumbers([1, 2, 3, 4, 5])); // [1, 3, 5]
 
-// Question 59 — Same pattern
 // What should replace ????
 function onlyPositive(arr) {
+   const result = [];
+   
+   for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) result.push(arr[i])
+      }
+   
+   return result;
+}
+console.log(onlyPositive([-2, 3, -1, 5])); // [3, 5]
+   
+// Question #60 — Same pattern
+
+function onlySmall(arr) {
   const result = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) result.push(arr[i])
+    if (arr[i] < 5) result.push(arr[i])
   }
 
   return result;
 }
-console.log(onlyPositive([-2, 3, -1, 5])); // [3, 5]
+console.log(onlySmall([1, 8, 2, 10])); // [3, 2]
