@@ -967,7 +967,13 @@ function onlySmall(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < 5) result.push(arr[i])
   }
-
   return result;
 }
 console.log(onlySmall([1, 8, 2, 10])); // [3, 2]
+
+// Question #61 — find()
+const nummoz = [3, 7, 2, 9];
+
+const resultado = nummoz.find(num => num > 5);
+
+console.log(resultado);
