@@ -960,7 +960,6 @@ function onlyPositive(arr) {
 console.log(onlyPositive([-2, 3, -1, 5])); // [3, 5]
    
 // Question #60 — Same pattern
-
 function onlySmall(arr) {
   const result = [];
 
@@ -985,41 +984,3 @@ function addSecondLowAndSecondHi(arr) {
 }
 
 addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
-
-// Question #63 fizzBuzz
-function fizzBuzz(num) {
-   for (let i = 1; i <= num; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-         console.log("FIzBuzz")
-      } else if (i % 3 === 0) {
-         console.log("Fizz")
-      } else if (i % 5 === 0) {
-         console.log("Buzz")
-      } else {
-         console.log(i)
-      }
-   }
-}
-
-fizzBuzz(30) // This works in the console
-
-// Initializes an array containing numeric values
-const carz = [2, 4, 6];
-
-// Initializes an accumulator variable to keep track of the running sum
-let total = 0;
-
-// Standard for-loop:
-// 1. Starts index counter 'i' at 0 (first element)
-// 2. Runs while 'i' is less than carz.length (3)
-// 3. Increments 'i' by 1 on each iteration
-for (let i = 0; i < carz.length; i++) {
-   // Adds the array element at index 'i' to the running 'total'
-   // Iteration 0 (i = 0): total = 0 + carz[0] (2) -> total is 2
-   // Iteration 1 (i = 1): total = 2 + carz[1] (4) -> total is 6
-   // Iteration 2 (i = 2): total = 6 + carz[2] (6) -> total is 12
-   total = total + carz[i];
-}
-
-// Logs the final calculated sum to the console
-console.log(total); // Logs: 12
