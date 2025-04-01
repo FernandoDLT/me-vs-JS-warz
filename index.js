@@ -975,7 +975,6 @@ console.log(onlySmall([1, 8, 2, 10])); // [3, 2]
 const nummoz = [3, 7, 2, 9];
 
 const resultado = nummoz.find(num => num > 5);
-
 console.log(resultado);
 
 function addSecondLowAndSecondHi(arr) {
