@@ -975,6 +975,7 @@ console.log(onlySmall([1, 8, 2, 10])); // [3, 2]
 const nummoz = [3, 7, 2, 9];
 
 const resultado = nummoz.find(num => num > 5);
+
 console.log(resultado);
 
 function addSecondLowAndSecondHi(arr) {
@@ -982,7 +983,7 @@ function addSecondLowAndSecondHi(arr) {
    alert (sorted [1] + sorted[sorted.length - 2])
 }
 
-addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720])
+addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
 
 function fizzBuzz(num) {
    for (let i = 1; i <= num; i++) {
@@ -998,4 +999,4 @@ function fizzBuzz(num) {
    }
 }
 
-fizzBuzz(30)
+fizzBuzz(30) // This works in the console
