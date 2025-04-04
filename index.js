@@ -986,6 +986,7 @@ function addSecondLowAndSecondHi(arr) {
 
 addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
 
+// Question #63 fizzBuzz
 function fizzBuzz(num) {
    for (let i = 1; i <= num; i++) {
       if (i % 3 === 0 && i % 5 === 0) {
