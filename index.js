@@ -978,6 +978,7 @@ const resultado = nummoz.find(num => num > 5);
 
 console.log(resultado);
 
+// Question #62 sort()
 function addSecondLowAndSecondHi(arr) {
    let sorted = arr.sort((a, b) => a - b)
    alert (sorted [1] + sorted[sorted.length - 2])
