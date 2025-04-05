@@ -1001,3 +1001,23 @@ function fizzBuzz(num) {
 }
 
 fizzBuzz(30) // This works in the console
+
+// #64
+// Initializes an array containing numeric values
+const carz = [2, 4, 6];
+// Initializes an accumulator variable to keep track of the running sum
+let total = 0;
+// Standard for-loop:
+// 1. Starts index counter 'i' at 0 (first element)
+// 2. Runs while 'i' is less than carz.length (3)
+// 3. Increments 'i' by 1 on each iteration
+for (let i = 0; i < carz.length; i++) {
+   // Adds the array element at index 'i' to the running 'total'
+   // Iteration 0 (i = 0): total = 0 + carz[0] (2) -> total is 2
+   // Iteration 1 (i = 1): total = 2 + carz[1] (4) -> total is 6
+   // Iteration 2 (i = 2): total = 6 + carz[2] (6) -> total is 12
+   total = total + carz[i];
+}
+
+// Logs the final calculated sum to the console
+console.log(total); // Logs: 12
