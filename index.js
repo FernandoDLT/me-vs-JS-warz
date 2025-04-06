@@ -1021,3 +1021,26 @@ for (let i = 0; i < carz.length; i++) {
 
 // Logs the final calculated sum to the console
 console.log(total); // Logs: 12
+
+// Question #65 — Same idea, slightly different
+// Initializes an array containing numeric values
+const nummsies = [2, 4, 6];
+// Initializes an accumulator variable to hold the conditional sum
+let totaly = 0;
+// Standard for-loop:
+// 1. Starts index counter 'i' at 0 (first element)
+// 2. Runs while 'i' is less than nummsies.length (3)
+// 3. Increments 'i' by 1 after each loop cycle
+for (let i = 0; i < nummsies.length; i++) {
+   // Conditional Check: Evaluates whether the current number is strictly greater than 3
+   if (nummsies[i] > 3) {
+      // Adds the element to 'totaly' only if it passes the condition (> 3)
+      // Iteration 0 (i = 0): nummsies[0] is 2 -> (2 > 3) is FALSE -> totaly remains 0
+      // Iteration 1 (i = 1): nummsies[1] is 4 -> (4 > 3) is TRUE  -> totaly = 0 + 4 (4)
+      // Iteration 2 (i = 2): nummsies[2] is 6 -> (6 > 3) is TRUE  -> totaly = 4 + 6 (10)
+      totaly = totaly + nummsies[i];
+   }
+}
+
+// Logs the final accumulated total to the console
+console.log(totaly); // Logs: 10
