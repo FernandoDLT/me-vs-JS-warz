@@ -1044,3 +1044,11 @@ for (let i = 0; i < nummsies.length; i++) {
 
 // Logs the final accumulated total to the console
 console.log(totaly); // Logs: 10
+
+// Question #66
+let all = 5;
+
+all += 3;
+
+console.log(all) // 8
+
