@@ -1052,3 +1052,9 @@ all += 3;
 
 console.log(all) // 8
 
+// Question #67
+let count = 3;
+
+count++;
+
+console.log(count)// 4
