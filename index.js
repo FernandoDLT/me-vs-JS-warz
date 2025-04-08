@@ -1109,3 +1109,10 @@ function fizzBucks(num) {
 }
 
 fizzBucks(60)
+
+function addSecondLowAndSecondHi(arr) {
+   let sorted = arr.sort((a, b) => a - b)
+   alert (sorted [1] + sorted[sorted.length -2])
+}
+
+addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
