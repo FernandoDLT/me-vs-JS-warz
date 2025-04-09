@@ -1058,3 +1058,8 @@ let count = 3;
 count++;
 
 console.log(count)// 4
+
+// Question #68 — ++ inside a loop
+for (let i = 1; i <= 3; i++) {
+   console.log(i) // 1, 2, 3
+}
