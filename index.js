@@ -1116,3 +1116,11 @@ function addSecondLowAndSecondHi(arr) {
 }
 
 addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
+
+function getEvz(arr) {
+   return arr.filter(function (number) {
+      return number % 2 === 0;
+   })
+}
+
+console.log(getEvz([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
