@@ -1063,3 +1063,12 @@ console.log(count)// 4
 for (let i = 1; i <= 3; i++) {
    console.log(i) // 1, 2, 3
 }
+
+// Question #69 — while loop
+let i = 1;
+
+while (i <= 3) {
+   console.log(i);
+   i++
+}
+// 1, 2, 3
