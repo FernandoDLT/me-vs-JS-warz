@@ -1072,3 +1072,15 @@ while (i <= 3) {
    i++
 }
 // 1, 2, 3
+
+// Question #70 — while + condition
+let a = 1;
+
+while (a <= 5) {
+  if (a % 2 === 0) {
+    console.log(a);
+  }
+
+  a++;
+}
+// 2, 4
