@@ -1124,3 +1124,10 @@ function getEvz(arr) {
 }
 
 console.log(getEvz([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
+
+function getOdds(arr) {
+   return arr.filter(function (odd) {
+      return odd % 2 !== 0;
+   })
+}
+console.log(getOdds([1, 2, 3, 4, 5, 6, 30, 13, 53, 27, 101])); // Logs: [2, 4, 6, 30]
