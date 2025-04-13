@@ -1084,3 +1084,12 @@ while (a <= 5) {
   a++;
 }
 // 2, 4
+
+// Question #71 — break
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    break;
+  }
+
+  console.log(i);
+}
