@@ -1118,16 +1118,17 @@ function addSecondLowAndSecondHi(arr) {
 addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
 
 function getEvz(arr) {
-   return arr.filter(function (number) {
-      return number % 2 === 0;
+   return arr.filter(function (evz) {
+      return evz % 2 === 0;
    })
 }
 
 console.log(getEvz([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
 
 function getOdds(arr) {
-   return arr.filter(function (odd) {
-      return odd % 2 !== 0;
+   return arr.filter(function (odds) {
+      return odds % 2 !== 0;
    })
 }
+
 console.log(getOdds([1, 2, 3, 4, 5, 6, 30, 13, 53, 27, 101])); // Logs: [2, 4, 6, 30]
