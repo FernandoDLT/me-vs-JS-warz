@@ -1117,18 +1117,26 @@ function addSecondLowAndSecondHi(arr) {
 
 addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
 
+// Returns a new array containing only the even numbers
 function getEvz(arr) {
+   // .filter() keeps elements where
    return arr.filter(function (evz) {
+      // number % 2 === 0 evaluates to true
       return evz % 2 === 0;
-   })
+   });
 }
 
 console.log(getEvz([1, 2, 3, 4, 5, 6, 30])); // Logs: [2, 4, 6, 30]
 
+// Returns a new array containing only the odd numbers
 function getOdds(arr) {
-   return arr.filter(function (odds) {
-      return odds % 2 !== 0;
-   })
+   // .filter() keeps elements where 
+   return arr.filter(function (odd) {
+      // number % 2 !== 0 evaluates to true
+      return odd % 2 !== 0;
+   });
 }
 
-console.log(getOdds([1, 2, 3, 4, 5, 6, 30, 13, 53, 27, 101])); // Logs: [2, 4, 6, 30]
+console.log(getOdds([1, 2, 3, 4, 5, 6, 30, 13, 53, 27, 101])); 
+// Logs: [1, 3, 5, 13, 53, 27, 101]
+
