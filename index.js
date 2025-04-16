@@ -1117,6 +1117,7 @@ function addSecondLowAndSecondHi(arr) {
 
 addSecondLowAndSecondHi([4, 1, 6, 7, 9, 11, 720]) // 15
 
+// #73 Using filter()
 // Returns a new array containing only the even numbers
 function getEvz(arr) {
    // .filter() keeps elements where
@@ -1140,3 +1141,10 @@ function getOdds(arr) {
 console.log(getOdds([1, 2, 3, 4, 5, 6, 30, 13, 53, 27, 101])); 
 // Logs: [1, 3, 5, 13, 53, 27, 101]
 
+
+for (let i = 1; i <= 5; i++) {
+   if (i === 3) {
+      continue; // continue + skip
+   }
+   console.log(i)
+}
