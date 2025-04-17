@@ -1088,9 +1088,8 @@ while (a <= 5) {
 // Question #71 — break
 for (let i = 1; i <= 5; i++) {
   if (i === 3) {
-    break;
+    break; // Stops the loop at 2
   }
-
   console.log(i);
 }
 
@@ -1146,5 +1145,12 @@ for (let i = 1; i <= 5; i++) {
    if (i === 3) {
       continue; // continue + skip
    }
-   console.log(i)
+   console.log(i) // 1, 2, 4, 5
+}
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    break; // Stops the loop at 2
+  }
+  console.log(i);
 }
