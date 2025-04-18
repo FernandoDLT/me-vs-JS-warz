@@ -1154,3 +1154,12 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(i);
 }
+
+function findFirstEv(arr) {
+   for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+         return arr[i]
+      }
+   }
+}
+console.log(findFirstEv([1, 3, 5, 6, 8])) // 6
