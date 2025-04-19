@@ -1154,7 +1154,7 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(i);
 }
-
+// #77 Find first even number
 function findFirstEv(arr) {
    for (let i = 0; i < arr.length; i++) {
       if (arr[i] % 2 === 0) {
@@ -1162,4 +1162,20 @@ function findFirstEv(arr) {
       }
    }
 }
-console.log(findFirstEv([1, 3, 5, 6, 8])) // 6
+console.log(findFirstEv([1, 3, 5, 16, 8])) // 6
+
+// Question #78 — return vs console.log
+// Defines a function that logs the doubled value to the terminal but lacks a 'return' statement
+function double(num) {
+   console.log(num * 2); // Prints 10 to the console (side effect), but evaluates to undefined
+}
+
+// Calls 'double(5)' (which logs 10) and assigns its return value to 'theresult'
+const theresult = double(5); 
+
+// Logs 'theresult' (since 'double' returned nothing, its implicit value is undefined)
+console.log(theresult); 
+
+// Output in order:
+// 10
+// undefined
