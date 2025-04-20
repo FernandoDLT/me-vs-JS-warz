@@ -1179,3 +1179,15 @@ console.log(theresult);
 // Output in order:
 // 10
 // undefined
+
+// Question #79 — Explicit return statement
+// Defines a function that multiplies the input by 2 and explicitly returns the result
+function double(num) {
+  return num * 2; // Hands 10 back to the caller
+}
+
+// Calls 'double(5)' and stores its returned value (10) into 'resulto'
+const resulto = double(5);
+
+// Logs the value stored in 'resulto' (10) to the console
+console.log(resulto); // Logs: 10
