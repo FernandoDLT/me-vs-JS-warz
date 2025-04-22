@@ -1195,8 +1195,11 @@ console.log(resulto); // Logs: 10
 // Question #80 — Function parameters
 // Defines a function that concatenates "Hello" with the provided 'name' parameter
 function great(name) {
-   return "Hello" + name; // Returns "Hello" + parameter string
+   return "Hello" + name;
 }
-
 // Logs the plain string "Fernando" directly to the console (the 'great' function is defined, but never called)
 console.log("Fernando"); // Logs: "Fernando"
+
+// Question #81 — Array indexing
+const frutas = ["apple", "orange", "peach"]
+console.log(frutas[1]);
