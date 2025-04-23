@@ -1202,4 +1202,5 @@ console.log("Fernando"); // Logs: "Fernando"
 
 // Question #81 — Array indexing
 const frutas = ["apple", "orange", "peach"]
-console.log(frutas[1]);
+console.log(frutas[1]); // orange
+console.log(frutas.length); // 3
